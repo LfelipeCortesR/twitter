@@ -7,7 +7,7 @@ describe("Unit Test for User class", () => {
     expect(user.username).toBe("LFelipe") 
     expect(user.name).toBe("Felipe")
     expect(user.bio).toBe("Bio")
-    expect(user.dateCreated).toBe("dateCreated")
-    expect(user.lastUpdated).toBe("lastUpdate") 
+    expect(user.dateCreated).not.toBeUndefined()
+    expect(user.lastUpdated).not.toBeUndefined()
     });
   })
