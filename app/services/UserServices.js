@@ -12,6 +12,12 @@ class UserServices {
           user.username=newUser
           return user
     }
+    static getAllUsernames(usernames){
+        const allUsernames=usernames.forEach(element => {
+            element.usernames            
+        });
+        return allUsernames
+    }
 }
 
 module.exports=UserServices
