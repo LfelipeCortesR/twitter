@@ -8,9 +8,30 @@ class User{
         this.lastUpdated=new Date()
     }
 
-    getInfo(){
-        return `Hey, I´m ${this.actor} from ${this.studio} studio`
+    get getusername(){
+        return this.username
       }
+
+    get getbio(){
+        return this.bio
+    }
+
+    get getdateCreated(){
+        return this.dateCreated
+    }
+
+    get getlastUpdated(){
+        return this.lastUpdated
+    }
+
+    set setUsername(newUsername){
+        this.username=newUsername
+      }
+
+    set setBio(newBio){
+         this.bio=newBio
+    }
+
 }
 
 module.exports=User
